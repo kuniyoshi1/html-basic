@@ -1,0 +1,98 @@
+.clearfix::after {
+  content: "";
+  
+  display: block;
+  
+  clear: both;
+}
+
+.container {
+  width: 800px;
+  
+  margin: auto;
+}
+
+.header {
+  background-color: red;
+  
+  height: 100px;
+  
+  width: 800px;
+}
+
+.sidebar {
+  float: left;
+  
+  background-color: yellow;
+  
+  height: 400px;
+  
+  width: 200px;
+  
+  border: 5px solid black;
+  
+  box-sizing: border-box;
+
+  /*  指定した幅にボーダーも含める*/
+}
+
+.main {
+  float: right;
+  
+  background-color: blue;
+  
+  height: 400px;
+  
+  width: 600px;
+    
+}
+
+.footer {
+  background-color: green;
+  
+  height: 100px;
+  
+  width: 800px;
+}
+
+
+.hoge {
+  height: 200px;
+  width: 300px;
+  background-color: aqua;
+}
+
+.fuga {
+  height: 100px;
+  width: 300px;
+  background-color: black;
+}
+
+.bottom {
+  height: 100px;
+  width: 600px;
+  background-color: blueviolet;
+}
+
+.right {
+  background-color: purple;
+  height: 300px;
+  width: 300px;
+  float: right;
+}
+
+.left {
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+

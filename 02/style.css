@@ -1,0 +1,39 @@
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.header {
+  background-color: red;
+  height: 100px;
+  width: 800px;
+}
+
+.sidebar {
+  background-color: yellow;
+  height: 400px;
+  width: 200px;
+  float: left;
+}
+
+.main {
+  background-color: blue;
+  height: 400px;
+  width: 600px;
+  float: right;
+}
+
+.footer {
+  background-color: green;
+  height: 100px;
+  width: 800px;
+/*  margin-top: 400px;*/
+}
+
+/*clearfixを使った回り込みの解除*/
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}

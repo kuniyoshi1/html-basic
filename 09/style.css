@@ -1,0 +1,213 @@
+/* ハンバーガーメニュー */
+.hamburger {
+  width: 28px;
+  height: 30px;
+  margin: 30px auto 10px;
+}
+
+.hamburger span {
+  position: relative;
+  display: block;
+}
+
+.hamburger span:after, 
+.hamburger span:before {
+  content: "";
+  position: absolute;
+}
+
+.hamburger span,
+.hamburger span:before, 
+.hamburger span:after {
+  width: 100%;
+  height: 5px;
+  background-color: #009cd3;
+  
+/*  時間的変化のアニメーションをすべて指定*/
+  transition: all 0.5s ease;
+/*  アニメーションの推移*/
+  
+  border-radius: 2px;
+}
+
+.hamburger span:before {
+  top: -9px;
+}
+
+.hamburger span:after {
+  top: 9px;
+}
+
+
+
+/*ホバーされたときに✕に変更するコード*/
+
+.hamburger:hover span {
+  
+/*  消す*/
+  background-color: transparent;
+  
+}
+
+.hamburger:hover span:before {
+  
+  transform: rotate(45deg) translate(5px,5px);
+  
+}
+
+.hamburger:hover span:after {
+  
+  transform: rotate(-45deg) translate(7px, -8px);
+  
+}
+
+/*ハンバーガーメニュー終わり*/
+
+
+
+
+/*ふわっと表示*/
+
+.anime_test {
+  
+  text-align: center;
+  
+  position: relative;
+  
+  animation: fadeIn 3s ease;
+  
+}
+
+
+/*
+@keyframes アニメーションの名前(任意) {
+  
+  0%{
+    ここに開始時のCSS指定
+  }
+  
+  100%{
+    ここに終了時のCSS指定
+  }
+  
+}
+*/
+
+@keyframes fadeIn {
+  
+  0%{
+    opacity: 0;
+    
+    top:100px;
+  }
+  
+  100%{
+    opacity: 1;
+    
+    top: 0;
+  }
+  
+}
+
+
+/*アニメーション練習*/
+
+/*
+アニメーション練習
+
+box1もbox2も一緒
+
+色なんでもOK
+
+縦横100pxの正方形
+
+画像からのマージンはお任せ。画面中央に揃える
+
+
+box1
+
+画面右200pxの位置から、1.5sかけてスライドイン
+
+(opacityの指定等はなし)
+
+ease
+
+
+
+
+box2
+
+画面左200pxの位置から2.5sかけてスライドイン
+
+(opacityの指定等はなし)
+
+ease
+*/
+
+
+.move-box1 {
+  background-color: #4284a2;
+  
+  height: 100px;
+  
+  width: 100px;
+  
+  margin: 20px auto 0;
+  
+  text-align: center;
+  
+  color: white;
+  
+  position: relative;
+  
+  animation: slideIn1 1.5s ease;
+}
+
+
+@keyframes slideIn1 {
+  
+  0% {
+    right: -200px;
+  }
+  
+  100%{
+    right: 0px;
+  }
+
+}
+
+
+
+.move-box2 {
+  background-color: #4284a2;
+  
+  height: 100px;
+  
+  width: 100px;
+  
+  margin: 20px auto 0;
+  
+  text-align: center;
+  
+  color: white;
+  
+  position: relative;
+  
+  animation: slideIn2 2.5s ease;
+  
+}
+
+
+@keyframes slideIn2 {
+  
+  0%{
+    left: -200px;
+  }
+  
+  100%{
+    left: 0px;
+  }
+  
+  
+}
+

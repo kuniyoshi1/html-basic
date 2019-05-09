@@ -1,0 +1,41 @@
+.container {
+  margin:auto;
+  
+  padding-top: 100px;
+  
+  background-color: #888;
+  
+  height: 800px;
+  
+  width: 1200px;
+}
+
+.box {
+  text-align: center;
+}
+
+.box li{
+  background-color: #fff;
+  
+  padding: 10px;
+  
+  font-size: 30px;
+  
+  color: #f00;
+  
+  width: 20%;
+  
+  display: inline-block;
+  
+  word-break: break-all;
+  
+  box-sizing: border-box;
+  
+  border: 5px solid #000;
+
+}
+
+.box li:nth-child(odd){
+  margin-right: 5%;
+}
+

@@ -1,0 +1,42 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: red;
+  height: 100px;
+  width: 100%;
+}
+
+.main {
+  margin-top: 100px;
+  height: 400px;
+  background-color: blue;
+}
+
+
+.main2 {
+  height: 400px;
+  background-color: brown;
+}
+
+.main3 {
+  height: 400px;
+  background-color: skyblue;
+}
+
+.footer {
+  height: 100px;
+  background-color: green;
+}
+
+/*
+main2はbrown,
+
+main3はskyblue,
+
+footerはgreen、高さ100px.
+*/
+
+
+
+

@@ -1,0 +1,29 @@
+.bg {
+  
+  height: 800px;
+  
+  background: url(../img/img.jpg);
+
+  background-repeat: no-repeat;
+  
+  background-position: center center;
+  
+  background-size: cover;
+  
+  background-attachment: fixed;
+}
+
+.bg > div{
+  
+  color: #fff;
+  font-size: 40px;
+
+}
+
+.hoge {
+  
+  background-color: aqua;
+  
+  height: 800px;
+  
+}

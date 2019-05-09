@@ -1,0 +1,108 @@
+.container {
+  width: 800px;
+  margin: auto;
+}
+
+.header{
+  background-color: red;
+  
+  height: 100px;
+  
+  width: 800px;
+  
+  position: relative;
+  
+}
+
+.header-right {
+  background-color: white;
+  
+  position: absolute;
+  
+  top: 20px;
+  
+  right: 20px;
+  
+  padding: 10px;
+  
+}
+
+.header-right > li {
+/*  ↑header-rightの小要素のliタグに対して*/
+  
+  height: 40px;
+  
+  width: 40px;
+  
+  background-color: #00ff00;
+  
+  float: left;
+  
+  margin-right: 10px;
+  
+}
+
+.header-right > li:last-child{
+
+  margin-right: 0;
+
+}
+
+
+.sidebar{
+  
+  float: left;
+  background-color: yellow;
+  
+  height: 400px;
+  
+  width: 200px;
+  
+  position: relative;
+
+
+}
+
+.sidebar-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.sidebar-box > li{
+  background-color: #f0f;
+  height: 50px;
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.sidebar-box > li:last-child{
+  margin-bottom: 0;
+}
+
+.main {
+  
+  float: right;
+  
+  background-color: blue;
+  
+  height: 400px;
+  
+  width: 600px;
+}
+
+.footer {
+  background-color: green;
+  
+  height: 100px;
+  
+  width: 800px;
+}
+
+.clearfix::after{
+  content: "";
+  
+  display: block;
+  
+  clear: both;
+}

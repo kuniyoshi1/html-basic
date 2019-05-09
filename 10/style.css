@@ -1,0 +1,145 @@
+.sample1 {
+  
+  display: grid;
+  
+  grid-template-rows: 50px 100px;
+  
+  grid-template-columns: 150px 1fr;
+  
+/*
+  →fr→分裂、分断→1frあまりをとる。
+   
+  2fr 1fr 
+*/
+  
+}
+
+
+.sample1 header {
+  
+  grid-row: 1;
+  
+  grid-column: 1 / 3;
+  
+  background-color: blue;
+  
+}
+
+
+.sample1 aside {
+  background-color: aqua;
+}
+
+.sample1 main {
+  background-color: blueviolet;
+}
+
+
+.mt5 {
+  margin-top: 50px;
+}
+
+
+.grid-container {
+  
+  display: grid;
+  
+  grid-gap: 20px 50px;
+  
+/*  行、列の順番で幅を指定*/
+  
+  grid-template-columns: auto auto auto;
+
+  /*  列数指定*/
+  
+  grid-template-rows: 50px 150px 200px;
+  
+  
+  background-color: aqua;
+
+  padding: 10px;
+}
+
+.grid-item {
+  
+  background-color: beige;
+  
+}
+
+
+.grid-item:nth-child(1) {
+
+  
+  grid-column: 1 / 4;
+  
+}
+
+.grid-item:nth-child(2) {
+  
+  grid-row: 2 / 4;
+  
+  grid-column: 1 / 2;
+  
+}
+
+.grid-item:nth-child(3) {
+  
+  grid-row: 2 / 4;
+  
+  grid-column: 2 / 4;
+
+}
+
+
+
+
+.sample2 {
+  
+  display: grid;
+  
+  grid-template-rows: 60px 1fr 100px;
+  
+  grid-template-columns: 20% 1fr 20%;
+  
+  grid-gap: 10px 10px;
+  
+  grid-template-areas: 'header header header'
+                       'nav main aside'
+                       'footer footer footer';
+  height: 100vh;
+}
+
+.sample2 header {
+  grid-area: header;
+  background-color: #F7B3F9;
+}
+
+.sample2 nav {
+  grid-area: nav;
+  background-color: aqua;
+}
+
+.sample2 main {
+  grid-area: main;
+  background-color: #BAFCDE;
+}
+
+.sample2 aside {
+  grid-area: aside;
+  background-color: #FDFFCC;
+}
+
+.sample2 footer {
+  grid-area: footer;
+  background-color: #FFDE99;
+}
+
+
+
+
+
+
+
+
+
+
